@@ -23,6 +23,7 @@ class Added_bd_table:
                         if count == 0:
                             count += 1
                             continue
+                        print(line)
                         cur.execute(self.execute_first_arg, tuple(chain([line[n] for n in range(self.number_columns)])))
 
         conn.close()
